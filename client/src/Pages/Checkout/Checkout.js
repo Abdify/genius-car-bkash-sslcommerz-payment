@@ -31,7 +31,7 @@ const Checkout = () => {
 
         // }
 
-        fetch('https://genius-car-server-neon.vercel.app/orders', {
+        fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
