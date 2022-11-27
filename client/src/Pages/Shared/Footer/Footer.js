@@ -1,9 +1,8 @@
-import React from 'react';
 import logo from '../../../assets/logo.svg';
 
 const Footer = () => {
     return (
-        <footer className="footer p-32 bg-black text-white">
+        <footer className="footer p-32 bg-black text-white print:hidden">
             <div>
                 <img src={logo} alt="" />
                 <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>

@@ -1,5 +1,7 @@
 import Main from "../../Layout/Main";
 import Checkout from "../../Pages/Checkout/Checkout";
+import PaymentFail from "../../Pages/Checkout/PaymentFail";
+import PaymentSuccess from "../../Pages/Checkout/PaymentSuccess";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import Orders from "../../Pages/Orders/Orders";
@@ -33,7 +35,15 @@ const router = createBrowserRouter([
         {
           path: '/orders',
           element: <PrivateRoute><Orders></Orders></PrivateRoute>
-        }
+        },
+        {
+          path: "/payment/success",
+          element: <PaymentSuccess />
+        },
+        {
+          path: "/payment/fail",
+          element: <PaymentFail />
+        },
       ]
     }
   ]);
